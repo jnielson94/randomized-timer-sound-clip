@@ -3,8 +3,8 @@ import Head from 'next/head'
 import { useRef, useState } from 'react'
 
 const Home: NextPage = () => {
-  const [minLength, setMinLength] = useState('1')
-  const [maxLength, setMaxLength] = useState('5')
+  const [minLength, setMinLength] = useState('10')
+  const [maxLength, setMaxLength] = useState('60')
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const timeoutRef = useRef<number | null>(null)
   return (
